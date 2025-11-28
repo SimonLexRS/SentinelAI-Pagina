@@ -19,12 +19,29 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    setFormState({ name: "", email: "", company: "", message: "" });
-    setTimeout(() => setIsSuccess(false), 5000);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      setIsSuccess(true);
+      setFormState({ name: "", email: "", company: "", message: "" });
+      setTimeout(() => setIsSuccess(false), 5000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert(t.contact.form.errorMessage || "Error sending message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
