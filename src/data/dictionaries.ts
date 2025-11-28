@@ -26,29 +26,29 @@ export const dictionary = {
         },
         solutions: {
             title: "Soluciones de IA Especializadas",
-            subtitle: "Desde monitoreo profundo de infraestructura hasta agentes de atención al cliente.",
+            subtitle: "Potencie su infraestructura con herramientas inteligentes diseñadas para el futuro.",
             zabbix: {
                 title: "Integración Zabbix AI",
-                description: "Nuestro chatbot avanzado vive dentro de Zabbix, proporcionando visibilidad completa de los eventos de su red. No solo observa; permite configurar Zabbix usando comandos de lenguaje natural.",
-                features: ["Visibilidad Completa", "Configuración con Lenguaje Natural", "Diagnósticos en Tiempo Real"],
+                description: "Llevamos Zabbix al siguiente nivel. Nuestro chatbot inteligente se integra nativamente para ofrecer análisis de causa raíz instantáneo, correlación de eventos y configuración automatizada. Olvídese de navegar por interminables menús; interactúe con su infraestructura usando lenguaje natural.",
+                features: ["Análisis de Causa Raíz", "Configuración por Voz/Texto", "Correlación de Eventos", "Alertas Predictivas"],
                 demo: {
-                    line1: "> IA: Monitoreo activo...",
-                    line2: "> Alta latencia detectada en Server-01.",
-                    line3: "> Auto-escalado iniciado.",
+                    line1: "> IA: Analizando alerta crítica...",
+                    line2: "> Causa raíz: Bloqueo en DB-01.",
+                    line3: "> Acción: Reiniciando servicio...",
                 }
             },
             n8n: {
-                title: "Expertos en Automatización n8n",
-                description: "Dominamos n8n para automatizar flujos de trabajo complejos. Desde crear agentes personalizados hasta conectar aplicaciones dispares, aprovechamos LangChain para construir sistemas autónomos.",
-                features: ["Creación de Agentes", "Integración LangChain", "Conectividad Multi-App"],
+                title: "Orquestación con n8n",
+                description: "Automatización sin límites. Diseñamos flujos de trabajo empresariales complejos que conectan sus herramientas críticas. Desde la ingestión de datos hasta la respuesta automática a incidentes, nuestros agentes de IA orquestan procesos que antes requerían intervención humana constante.",
+                features: ["Flujos de Trabajo Autónomos", "Integración de APIs Corporativas", "Respuesta a Incidentes", "Procesamiento en Tiempo Real"],
             },
             agents: {
-                title: "Plataforma Sentinel Agents",
-                description: "Nuestra plataforma dedicada, agent.sentinel-ia.com, conecta su negocio con clientes vía WhatsApp. Genere leads, gestione pedidos y atienda consultas automáticamente 24/7.",
-                features: ["Integración WhatsApp", "Generación de Leads", "Gestión de Pedidos"],
+                title: "Sentinel Agents (SaaS)",
+                description: "Su fuerza laboral digital, disponible 24/7. Nuestra plataforma SaaS despliega agentes de IA entrenados en su negocio para atención al cliente, ventas y soporte técnico vía WhatsApp y Web. Captura leads, resuelve dudas y escala casos complejos automáticamente.",
+                features: ["Soporte Omnicanal 24/7", "Calificación de Leads", "Integración CRM", "Entrenamiento Personalizado"],
                 demo: {
-                    user: "¡Hola! Quisiera hacer un pedido.",
-                    agent: "¡Puedo ayudarte con eso! ¿Qué producto te interesa?",
+                    user: "Necesito soporte técnico urgente.",
+                    agent: "Entendido. He abierto el ticket #992 y notificado al guardia.",
                 }
             },
         },
@@ -115,29 +115,29 @@ export const dictionary = {
         },
         solutions: {
             title: "Specialized AI Solutions",
-            subtitle: "From deep infrastructure monitoring to customer-facing agents.",
+            subtitle: "Empower your infrastructure with intelligent tools designed for the future.",
             zabbix: {
                 title: "Zabbix AI Integration",
-                description: "Our advanced chatbot lives inside Zabbix, providing complete visibility into your network events. It doesn't just watch; it allows you to configure Zabbix itself using natural language AI commands.",
-                features: ["Full Event Visibility", "Natural Language Config", "Real-time Diagnostics"],
+                description: "Taking Zabbix to the next level. Our intelligent chatbot natively integrates to provide instant root cause analysis, event correlation, and automated configuration. Forget navigating endless menus; interact with your infrastructure using natural language.",
+                features: ["Root Cause Analysis", "Voice/Text Configuration", "Event Correlation", "Predictive Alerting"],
                 demo: {
-                    line1: "> AI: Monitoring active...",
-                    line2: "> Detected high latency on Server-01.",
-                    line3: "> Auto-scaling initiated.",
+                    line1: "> AI: Analyzing critical alert...",
+                    line2: "> Root cause: Deadlock on DB-01.",
+                    line3: "> Action: Restarting service...",
                 }
             },
             n8n: {
-                title: "n8n Automation Experts",
-                description: "We master n8n to automate complex workflows. From creating custom agents to connecting disparate applications, we leverage LangChain to build intelligent, autonomous systems.",
-                features: ["Custom Agent Creation", "LangChain Integration", "Cross-App Connectivity"],
+                title: "n8n Orchestration",
+                description: "Limitless automation. We design complex enterprise workflows connecting your critical tools. From data ingestion to automated incident response, our AI agents orchestrate processes that previously required constant human intervention.",
+                features: ["Autonomous Workflows", "Corporate API Integration", "Incident Response", "Real-time Processing"],
             },
             agents: {
-                title: "Sentinel Agents Platform",
-                description: "Our dedicated platform, agent.sentinel-ia.com, connects your business to customers via WhatsApp. Generate leads, manage orders, and handle inquiries automatically 24/7.",
-                features: ["WhatsApp Integration", "Lead Generation", "Order Management"],
+                title: "Sentinel Agents (SaaS)",
+                description: "Your digital workforce, available 24/7. Our SaaS platform deploys AI agents trained on your business for customer service, sales, and technical support via WhatsApp and Web. Capture leads, resolve queries, and escalate complex cases automatically.",
+                features: ["24/7 Omnichannel Support", "Lead Qualification", "CRM Integration", "Custom Training"],
                 demo: {
-                    user: "Hello! I'd like to place an order.",
-                    agent: "I can help with that! What product are you interested in?",
+                    user: "I need urgent technical support.",
+                    agent: "Understood. Ticket #992 created and on-call staff notified.",
                 }
             },
         },
