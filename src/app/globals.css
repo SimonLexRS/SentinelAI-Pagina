@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  /* Light Mode (Pointer AI - Clean/Tech) */
+  --background: #ffffff;
+  --foreground: #09090b;
+  /* Zinc-950 */
+  --primary: #18181b;
+  /* Zinc-900 */
+  --secondary: #f4f4f5;
+  /* Zinc-100 */
+  --accent: #e4e4e7;
+  /* Zinc-200 */
+  --muted: #71717a;
+  /* Zinc-500 */
+
+  --font-inter: "Inter", sans-serif;
+}
+
+.dark {
+  /* Dark Mode */
+  --background: #09090b;
+  /* Zinc-950 */
+  --foreground: #fafafa;
+  /* Zinc-50 */
+  --primary: #fafafa;
+  /* Zinc-50 */
+  --secondary: #27272a;
+  /* Zinc-800 */
+  --accent: #27272a;
+  /* Zinc-800 */
+  --muted: #a1a1aa;
+  /* Zinc-400 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  letter-spacing: -0.025em;
+  /* Tight tracking for modern look */
+}
