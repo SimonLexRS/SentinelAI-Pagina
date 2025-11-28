@@ -23,7 +23,19 @@ export async function POST(request: Request) {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASS,
             },
+            tls: {
+                rejectUnauthorized: false // Allow self-signed certificates or issues with trust chain
+            }
         });
+
+        // Verify connection configuration
+        try {
+            await transporter.verify();
+            console.log("SMTP Connection verified");
+        } catch (verifyError) {
+            console.error("SMTP Connection Verification Failed:", verifyError);
+            // We don't return here, we try to send anyway, but logging this is crucial
+        }
 
         // Email content
         const mailOptions = {
@@ -59,7 +71,7 @@ export async function POST(request: Request) {
     } catch (error) {
         console.error('Error sending email:', error);
         return NextResponse.json(
-            { error: 'Failed to send email' },
+            { error: 'Failed to send email', details: error instanceof Error ? error.message : error },
             { status: 500 }
         );
     }
